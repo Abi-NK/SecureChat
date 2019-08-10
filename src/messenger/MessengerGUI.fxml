@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="buttonEnterIP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1174.0" style="-fx-border-color: #000000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="messenger.MessengerController">
+   <children>
+      <GridPane prefHeight="672.0" prefWidth="1174.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #213958;">
+               <children>
+                  <Pane fx:id="paneFront" layoutY="-1.0" prefHeight="672.0" prefWidth="587.0">
+                     <children>
+                        <Label fx:id="labelBigMath" layoutX="333.0" layoutY="257.0" text="Using BigMath" textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Circle fx:id="circle1" fill="WHITE" layoutX="64.0" layoutY="594.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="circle2" fill="WHITE" layoutX="97.0" layoutY="534.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="circle3" fill="WHITE" layoutX="124.0" layoutY="487.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #213958;">
+               <children>
+                  <TextField fx:id="inputMessage" layoutX="47.0" layoutY="582.0" prefHeight="58.0" prefWidth="363.0" promptText="enter a message" visible="false">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="buttonSend" layoutX="429.0" layoutY="582.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: #8effd1;" text="Send" visible="false" />
+                  <TextArea fx:id="messageArea" editable="false" layoutX="46.0" layoutY="82.0" prefHeight="486.0" prefWidth="501.0" style="-fx-background-color: #DEF6F7;" visible="false">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="labelTitle" layoutX="67.0" layoutY="201.0" prefHeight="248.0" prefWidth="460.0" text="Secure Chat" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="91.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonDisconnect" layoutX="427.0" layoutY="36.0" mnemonicParsing="false" onAction="#disconnect" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #a50808;" text="Disconnect" textFill="WHITE" visible="false" />
+                  <Label fx:id="labelBigMath" layoutX="345.0" layoutY="364.0" text="Using BigMath" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="WHITE" layoutX="60.0" layoutY="40.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="115.0" layoutY="40.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="155.0" layoutY="40.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="desKeyTextField" editable="false" layoutX="270.0" layoutY="583.0" prefHeight="54.0" prefWidth="157.0" visible="false">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></TextField>
+                  <Label fx:id="desLabel" layoutX="49.0" layoutY="588.0" prefHeight="45.0" prefWidth="221.0" text="DES key generated through Diffie Hellman:" visible="false">
+                     <font>
+                        <Font name="Calibri Light" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="ciphertextArea" editable="false" layoutX="31.0" layoutY="284.0" prefHeight="267.0" prefWidth="528.0" visible="false" wrapText="true">
+                     <font>
+                        <Font name="Calibri Light" size="12.0" />
+                     </font></TextArea>
+                  <TextArea fx:id="pkTextArea" layoutX="30.0" layoutY="57.0" prefHeight="58.0" prefWidth="528.0" visible="false" wrapText="true">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="pvTextArea" layoutX="31.0" layoutY="158.0" prefHeight="58.0" prefWidth="528.0" visible="false" wrapText="true">
+                     <font>
+                        <Font name="Calibri Light" size="12.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="pkLabel" layoutX="31.0" layoutY="40.0" text="RSA PUBLIC KEY" visible="false" />
+                  <Label fx:id="pvLabel" layoutX="31.0" layoutY="138.0" prefHeight="18.0" prefWidth="109.0" text="RSA PRIVATE KEY" visible="false" />
+                  <Button fx:id="buttonGenDes" layoutX="434.0" layoutY="583.0" mnemonicParsing="false" onAction="#genDes" prefHeight="54.0" prefWidth="108.0" style="-fx-background-color: #03265e;" text="Regen DES KEY" textFill="WHITE" visible="false" />
+                  <Button fx:id="buttonRegenRsa" layoutX="445.0" layoutY="24.0" mnemonicParsing="false" onAction="#genRSA" style="-fx-background-color: #03265e;" text="Regen RSA Keys" textFill="WHITE" visible="false" />
+                  <Button fx:id="buttonExit" layoutX="532.0" layoutY="-2.0" minWidth="40.0" mnemonicParsing="false" onAction="#exitWindow" prefHeight="32.0" prefWidth="40.0" style="-fx-background-color: #ad0000;" text="X" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <TextField fx:id="inputName" focusTraversable="false" layoutX="682.0" layoutY="244.0" prefHeight="39.0" prefWidth="238.0" promptText="name" />
+      <TextField fx:id="inputIP" focusTraversable="false" layoutX="682.0" layoutY="304.0" prefHeight="39.0" prefWidth="407.0" promptText="server address" text="138.68.168.181" />
+      <Button fx:id="buttonEnter" layoutX="1100.0" layoutY="304.0" mnemonicParsing="false" onAction="#enter" prefHeight="39.0" prefWidth="52.0" style="-fx-background-color: #03265e;" text="Enter" textFill="WHITE" />
+      <Pane fx:id="loadingPane" prefHeight="672.0" prefWidth="1174.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" visible="false">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="487.0" layoutY="236.0">
+               <image>
+                  <Image url="@loading.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelWaiting" layoutX="519.0" layoutY="364.0" prefHeight="38.0" prefWidth="169.0" text="Waiting for second user..." textAlignment="CENTER" visible="false" />
+         </children>
+      </Pane>
+      <RadioButton fx:id="radioButton240" layoutX="682.0" layoutY="373.0" mnemonicParsing="false" selected="true" text="RSA-240">
+         <toggleGroup>
+            <ToggleGroup fx:id="tGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton1024" layoutX="840.0" layoutY="373.0" mnemonicParsing="false" text="RSA-1024" toggleGroup="$tGroup" />
+      <RadioButton fx:id="radioButton2048" layoutX="990.0" layoutY="373.0" mnemonicParsing="false" text="RSA-2048" toggleGroup="$tGroup" />
+      <Label fx:id="serverLabel" layoutX="617.0" layoutY="257.0" prefHeight="26.0" prefWidth="168.0" text="SERVER PERSPECTIVE" visible="false" />
+   </children>
+</AnchorPane>
