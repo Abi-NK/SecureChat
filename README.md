@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This messenger can perform cryptographic protocols using a hand made big number calculator called "BigMath" to perform quick mathematical operations with little computational resources. The messenger uses RSA as a digital signature system, Diffie-Hellman for mutual authentication and hashes, providing confidentiality, integrity and authentication.
+This messenger can perform cryptographic protocols using a hand made big number calculator called "BigMath" to perform quick mathematical operations with little computational resources. The messenger uses RSA as a digital signature system, Diffie-Hellman for to generate a secret shared key, DES for message encryption and hashes, providing confidentiality, integrity and authentication.
 
 <br>
 
