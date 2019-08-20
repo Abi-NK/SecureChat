@@ -23,7 +23,7 @@ Java
 
 <br>
 
-###File Structure
+### File Structure
 
 Source code located within the RSAProject/src folder.
 Initial reports included in the RSAProject/reports folder.
@@ -61,13 +61,13 @@ Using Junit testing, right click the test file in Eclipse and run the test.
 
 <br>
 
-##Running the chat server
+## Running the chat server
 
 The java file to run the server is in the "Server" package in the /src folder. Right click on ChatServer.java and select run in eclipse to launch the server. If the server is run locally, the user would have to change the address in the messenger to "localhost".
 
 <br>
 
-##Running the Messenger
+## Running the Messenger
 
 Run the program by double clicking on the SecureChat JAR file. The program will ask for a hostname, which
 is "localhost" or another specified IP, the user enters their preferred username and the version of RSA
