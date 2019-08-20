@@ -25,13 +25,13 @@ Java
 
 ### File Structure
 
-Source code located within the RSAProject/src folder.
-Initial reports included in the RSAProject/reports folder.
-Unit tests located in the RSAProject/tests folder.
-Speed tests are in the "speed_test" package in the RSAProject/src folder.
-Runnable jar files are located in the RSAProject folder.
-Final report is located in the RSAProject folder.
-The generated documentation is located in the doc folder.
+- Source code located within the RSAProject/src folder.
+- Initial reports included in the RSAProject/reports folder.
+- Unit tests located in the RSAProject/tests folder.
+- Speed tests are in the "speed_test" package in the RSAProject/src folder.
+- Runnable jar files are located in the RSAProject folder.
+- Final report is located in the RSAProject folder.
+- The generated documentation is located in the doc folder.
 
 <br>
 
