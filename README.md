@@ -24,6 +24,7 @@ Java
 <br>
 
 ###File Structure
+
 Source code located within the RSAProject/src folder.
 Initial reports included in the RSAProject/reports folder.
 Unit tests located in the RSAProject/tests folder.
@@ -35,6 +36,7 @@ The generated documentation is located in the doc folder.
 <br>
 
 ### Installing
+
 This is a Windows-only project and works best with Eclipse.
 To run the MessengerMainGUI.java file (which is my main class for the project) you will need to install
 the following software:
@@ -60,11 +62,13 @@ Using Junit testing, right click the test file in Eclipse and run the test.
 <br>
 
 ##Running the chat server
+
 The java file to run the server is in the "Server" package in the /src folder. Right click on ChatServer.java and select run in eclipse to launch the server. If the server is run locally, the user would have to change the address in the messenger to "localhost".
 
 <br>
 
 ##Running the Messenger
+
 Run the program by double clicking on the SecureChat JAR file. The program will ask for a hostname, which
 is "localhost" or another specified IP, the user enters their preferred username and the version of RSA
 that they would like to use.
