@@ -95,4 +95,4 @@ PrototypeRSA.jar can be run to show the protoype of RSA using BigMath.
 
 ## Authors
 
-- **Abhishek Nand Kumar** -------- [AbhishekNk1](https://github.com/AbhishekNk1)
+- **Abhishek Nand Kumar** -------- [Abhishek-NK](https://github.com/Abhishek-NK)
